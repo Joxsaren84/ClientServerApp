@@ -7,22 +7,26 @@ public class Server {
 
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket(8300);
+        System.out.println("Server was started!");
 
 
         //clientSocket.getOutputStream().write(64);
 
-        int clientCount = 0;
+        int clientCount = 1;
 
         while(true) {
             Socket clientSocket = serverSocket.accept();
-            System.out.println("accept clients: " + clientCount++);
-            OutputStreamWriter writer = new OutputStreamWriter(clientSocket.getOutputStream());
-            writer.write("HTTP/1.0 200 OK\r\n" +
-                    "Content-type text/html\r\n"+
-                    "\r\n"+
-                    "<h1>Hello world!!! " + clientCount + "</h1>\r\n");
-            writer.flush();
 
+            BufferedReader reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            String message = reader.readLine();
+            System.out.println("Client's message: " + message);
+
+
+            System.out.println("accept clients: " + clientCount);
+            BufferedWriter writer = new BufferedWriter (new OutputStreamWriter(clientSocket.getOutputStream()));
+            writer.write("Hello!\nYou are " + (clientCount++) + " client!");
+            writer.newLine();
+            writer.flush();
             writer.close();
             clientSocket.close();
         }

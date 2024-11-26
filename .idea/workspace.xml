@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e21ce8f6-c359-4816-bc7b-dba8e86bb6ba" name="Changes" comment="create project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/myserver/Server.java" afterDir="false" />
+    <list default="true" id="e21ce8f6-c359-4816-bc7b-dba8e86bb6ba" name="Changes" comment="create add simple server">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/myclient/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/joxaren/myserver/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/joxaren/myserver/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,20 @@
     "last_opened_file_path": "D:/Java/ClientServerApp"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Server">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.joxaren.myclient.Client" />
+      <module name="ClientServerApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.joxaren.myclient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.joxaren.Main" />
       <module name="ClientServerApp" />
@@ -72,6 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.Main" />
       </list>
@@ -86,7 +101,9 @@
       <option name="presentableId" value="Default" />
       <updated>1732245444673</updated>
       <workItem from="1732245446115" duration="187000" />
-      <workItem from="1732506327886" duration="5240000" />
+      <workItem from="1732506327886" duration="5853000" />
+      <workItem from="1732581046257" duration="14000" />
+      <workItem from="1732595375647" duration="5479000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1732245507737</created>
@@ -95,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1732245507737</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create add simple server">
+      <created>1732511777435</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732511777436</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project" />
-    <option name="LAST_COMMIT_MESSAGE" value="create project" />
+    <MESSAGE value="create add simple server" />
+    <option name="LAST_COMMIT_MESSAGE" value="create add simple server" />
   </component>
 </project>
